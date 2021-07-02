@@ -21,13 +21,4 @@ module.exports = function() {
 }
 
 
-function run(cmd, cwd = null) {
-	return execSync(cmd, { encoding: "utf8", stdio: "inherit", cwd });
-}
-
-
-function getEnv(name) {
-	return process.env[name];
-}
-
 
