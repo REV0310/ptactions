@@ -19,6 +19,10 @@ const getInput = function(name, required = false) {
 	return value;
 }
 
-module.exports = { log };
+module.exports = { 
+	log,
+	run,
+	getInput
+};
 
 
