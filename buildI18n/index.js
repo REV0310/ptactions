@@ -13,7 +13,7 @@ function runAction() {
 		getInput("directory") || null,
 	);
 	
-	.toolslog(`Version : ${version}`)
+	tools.log(`Version : ${version}`)
 }
 
 runAction();
