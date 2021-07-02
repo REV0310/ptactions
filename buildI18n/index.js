@@ -22,4 +22,8 @@ function run(cmd, cwd = null) {
 	return execSync(cmd, { encoding: "utf8", stdio: "inherit", cwd });
 }
 
+function log(msg) {
+  console.log(msg); 
+};
+
 runAction();
