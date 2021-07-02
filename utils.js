@@ -1,13 +1,16 @@
+const { execSync } = require("child_process");
+const { unlinkSync, writeFileSync } = require("fs");
+const path = require("path");
 
 let log = function(msg) {
   console.log(msg); 
 };
 
-const run = function(cmd, cwd = null) {
+let run = function(cmd, cwd = null) {
 	return execSync(cmd, { encoding: "utf8", stdio: "inherit", cwd });
 }
 
-const getInput = function(name, required = false) {
+let getInput = function(name, required = false) {
 	const value = getEnv(`INPUT_${name.toUpperCase()}`);
 	if (value == null) {
 		// Value is either not set (`undefined`) or set to `null`
