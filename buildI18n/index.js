@@ -10,12 +10,14 @@ function runAction() {
 	version = run(
 		`mvn -version`
 	);
-	
-	run(
-		`ls`
-	);
-	
 	log(`Version : ${version}`)
+	
+	ls = run(
+		`ls -lrt`
+	);
+	log(`ls : ${ls}`)
+	
+	
 }
 
 function run(cmd, cwd = null) {
