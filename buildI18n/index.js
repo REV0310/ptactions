@@ -35,7 +35,7 @@ function runAction() {
 
 	log("Get the Maven project version…");
 	version = run(
-		`mvn -q -Dexec.executable=echo -Dexec.args='${project.version}' --non-recursive exec:exec`,
+		`mvn -version`,
 		getInput("directory") || null,
 	);
 	
