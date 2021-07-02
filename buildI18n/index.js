@@ -1,18 +1,18 @@
 const { execSync } = require("child_process");
 const { unlinkSync, writeFileSync } = require("fs");
 const path = require("path");
-const tools = require('./utils.js');
+const util = require('./utils.js');
 
 
 function runAction() {
 
-	tools.log("Get the Maven project version…");
+	util.log("Get the Maven project version…");
 	version = run(
 		`mvn -version`,
 		getInput("directory") || null,
 	);
 	
-	tools.log(`Version : ${version}`)
+	util.log(`Version : ${version}`)
 }
 
 runAction();
