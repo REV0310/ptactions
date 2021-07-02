@@ -19,7 +19,6 @@ const getInput = function(name, required = false) {
 	return value;
 }
 
-module.exports = function() { 
- log
-}
+module.exports = log
+
 
