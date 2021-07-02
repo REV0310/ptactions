@@ -1,7 +1,7 @@
 const { execSync } = require("child_process");
-const { unlinkSync, writeFileSync } = require("fs");
+const fs = require("fs");
 const path = require("path");
-const tools = require('../utils');
+eval(fs.readFileSync('../utils.js')+'');
 
 
 function runAction() {
