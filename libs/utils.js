@@ -22,10 +22,15 @@ let getInput = function(name, required = false) {
 	return value;
 }
 
+let getEnv = function(name) {
+	return process.env[name];
+}
+
 module.exports = { 
 	log,
 	run,
-	getInput
+	getInput,
+	getEnv
 };
 
 
