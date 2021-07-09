@@ -4,10 +4,6 @@ inputs:
     description: Application key
     required: true
     default: "pkc3"
-  app_type:
-    description: Application type
-    required: false
-    default: "i18n"
 runs:
   using: node12
   main: ./index.js

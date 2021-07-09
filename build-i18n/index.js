@@ -7,6 +7,9 @@ function runAction() {
 		`mvn -version`
 	);
 	utils.log(`Version : ${version}`)
+
+    let application = getInput("nexus_username", true);
+	utils.log(`Version : ${application}`)
 }
 
 runAction();
