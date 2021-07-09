@@ -8,7 +8,7 @@ function runAction() {
 	);
 	utils.log(`Version : ${version}`)
 
-    let application = getInput("nexus_username", true);
+    let application = utils.getInput("nexus_username", true);
 	utils.log(`Version : ${application}`)
 }
 
