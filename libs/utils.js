@@ -31,6 +31,6 @@ module.exports = {
 	run,
 	getInput,
 	getEnv
-};
+}; 
 
 
